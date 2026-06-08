@@ -1,0 +1,23 @@
+# Operating system and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~$*
+
+# Build/export artifacts
+*.log
+*.aux
+*.out
+*.toc
+
+# Local environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+
