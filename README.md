@@ -1,13 +1,6 @@
----
-title: "kinepipe-edc"
-document_type: "repository_readme"
-language: "en"
-status: "draft"
----
-
 # kinepipe-edc
 
-[![DOI](https://zenodo.org/badge/1262630271.svg)](https://doi.org/10.5281/zenodo.20589696)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.20589697-blue)](https://doi.org/10.5281/zenodo.20589697)
 
 This repository contains publication-oriented Agent Skills-style structures for clinical data capture and medical informatics workflows.
 
