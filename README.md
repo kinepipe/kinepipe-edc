@@ -7,6 +7,8 @@ status: "draft"
 
 # kinepipe-edc
 
+[![DOI](https://zenodo.org/badge/1262630271.svg)](https://doi.org/10.5281/zenodo.20589696)
+
 This repository contains publication-oriented Agent Skills-style structures for clinical data capture and medical informatics workflows.
 
 The current release is focused on reusable, non-operational methodological appendices associated with a manuscript on agentic AI-assisted construction of clinical data capture systems. These files are intended for scholarly review, adaptation, and transparent reporting. They are **not** distributed as installable or executable agent skills.
@@ -50,4 +52,3 @@ These files are publication-oriented artifacts. They do not certify software saf
 ## Citation
 
 Citation details will be added after manuscript submission or publication.
-

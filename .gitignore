@@ -2,6 +2,7 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+**/desktop.ini
 
 # Temporary files
 *.tmp
@@ -20,4 +21,3 @@ desktop.ini
 venv/
 __pycache__/
 .pytest_cache/
-
