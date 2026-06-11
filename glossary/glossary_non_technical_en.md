@@ -11,8 +11,7 @@ This document compiles key terms from frontend development, user interfaces (UI)
 4. [Data Structure, Hierarchies & Nesting](#4-data-structure-hierarchies--nesting)
 5. [Data Models & Catalogs](#5-data-models--catalogs)
 6. [Persistence & Saving Workflows](#6-persistence--saving-workflows)
-7. [Educational Domain / LMS Entities](#7-educational-domain--lms-entities)
-8. [Web References to Learn More](#web-references-to-learn-more)
+7. [Web References to Learn More](#web-references-to-learn-more)
 
 ---
 
@@ -165,23 +164,6 @@ Determines how, when, and where user data is saved to the database to prevent lo
 | **`persistence`** | The property of data to survive over time, remaining stably stored after shutting down the app or device. | Storing user profiles, historical grades, and system settings. | *"Ensure data `persistence` by saving the visual theme settings inside the browser's LocalStorage."* |
 | **`import`** | Reading an external file (Excel, CSV, JSON) and incorporating its rows/data into the app database. | Bulk student roster uploads, loading question banks from external files. | *"Design an `import` interface that reads an Excel sheet and automatically registers the section's student roster."* |
 | **`export`** | Extracting data from the system and formatting it into a downloadable file (PDF, Excel, JSON) for external use. | Generating downloadable grade sheets, backing up question banks. | *"Create a button to `export` the entire question bank into a structured JSON file."* |
-
----
-
-## 7. Educational Domain / LMS Entities
-
-Structuring concepts and business rules oriented toward school systems and automated evaluation generators, such as those in the `kinepipe-edc` project.
-
-| Term | Technical Description | Typical Use in kinepipe-edc | Example Prompt for the AI |
-| :--- | :--- | :--- | :--- |
-| **Course** | Root entity representing a school subject or academic syllabus (e.g., Biomechanics). | Storing description details, competencies, and curricular indicators. | *"Define the 'Course' entity to contain the content outline divided into thematic units."* |
-| **Section** | An administrative and practical subdivision of a Course for a specific group of students. | Assigning teachers and managing specific schedules. | *"Establish that a section must belong to a parent course, but can have independent teachers."* |
-| **Teacher** | A user entity with a teacher/instructor role having editing and assessment permissions. | Assigning to specific theory or laboratory sections. | *"Assign teachers to lab sections dynamically using an intermediate mapping table."* |
-| **Question Bank** | An indexed repository compiling evaluation questions categorized by metadata (type, topic, points, taxonomy). | Filtering and selecting items to construct tests. | *"Design a search engine inside the Question Bank filtering by cognitive level and estimated resolution time."* |
-| **Question Editor** | A specialized user interface in charge of creating individual questions along with their grading rubrics. | Designing workflows for multiple-choice, essay, and true/false questions. | *"Build a question editor allowing the user to write specific feedback for each incorrect alternative."* |
-| **Matrix Design** | Curricular templates defining how many questions of each topic and difficulty level a test should contain. | Automating the generation of balanced and valid exams. | *"Generate an evaluation matrix that extracts 5 easy, 10 medium, and 5 hard questions from the bank."* |
-| **Evaluations** | The structure of a final test document, split into institutional design (headers, logos) and instructional design (layout, question flow). | Generating the final assessment sheets for students. | *"Create a model for Evaluations separating the cover sheet layout (logos and instructions) from the question list."* |
-| **Printing** | Module in charge of converting assessments into printable PDF files, handling randomization and forms (Form A, Form B). | Controlling physical exam document generation. | *"Configure the printing module to generate three versions of the exam with randomized question ordering."* |
 
 ---
 

@@ -11,8 +11,7 @@ Este documento recopila términos clave del desarrollo frontend, interfaces de u
 4. [Estructura de Datos, Jerarquías y Anidación](#4-estructura-de-datos-jerarquías-y-anidación)
 5. [Modelos de Datos y Catálogos](#5-modelos-de-datos-y-catálogos)
 6. [Persistencia y Flujos de Guardado](#6-persistencia-y-flujos-de-guardado)
-7. [Entidades y Estructuras del Dominio Educativo / LMS](#7-entidades-y-estructuras-del-dominio-educativo--lms)
-8. [Referencias Web para Conocer Más](#referencias-web-para-conocer-más)
+7. [Referencias Web para Conocer Más](#referencias-web-para-conocer-más)
 
 ---
 
@@ -165,23 +164,6 @@ Determina cómo, cuándo y de qué manera se salvan los datos del usuario en la 
 | **`persistence`** | La propiedad de los datos de sobrevivir a lo largo del tiempo, permaneciendo almacenados de forma estable tras apagar la aplicación o el dispositivo. | Guardar perfiles de usuario, calificaciones históricas y configuraciones base. | *"Asegura la `persistence` de los datos guardando la configuración del tema visual en el almacenamiento local del navegador (LocalStorage)."* |
 | **`import`** | Proceso de leer un archivo externo (como Excel, CSV o JSON) e incorporar su estructura y datos dentro de la base de datos de la aplicación. | Carga masiva de alumnos, carga de un banco de preguntas desde un archivo externo. | *"Diseña una interfaz para `import` que lea un archivo Excel y registre automáticamente la lista de estudiantes de la sección."* |
 | **`export`** | Proceso de extraer datos del sistema y estructurarlos en un archivo descargable (como PDF, Excel o JSON) para su uso fuera de la aplicación. | Generar actas de notas descargables, respaldar bancos de preguntas. | *"Crea un botón para `export` el banco de preguntas completo en un archivo estructurado en formato JSON."* |
-
----
-
-## 7. Entidades y Estructuras del Dominio Educativo / LMS
-
-Conceptos de estructuración y lógicas del negocio orientadas a sistemas escolares y generadores de evaluaciones automáticas, como los gestionados en el proyecto `kinepipe-edc`.
-
-| Término | Descripción Técnica | Uso Típico en kinepipe-edc | Ejemplo de Prompt para la IA |
-| :--- | :--- | :--- | :--- |
-| **Curso** | Entidad raíz que representa una materia o asignatura académica (ej. Biomecánica). | Almacenar datos descriptivos, competencias e indicadores curriculares. | *"Define la entidad 'Curso' de modo que contenga la malla de contenidos dividida en unidades temáticas."* |
-| **Sección** | Subdivisión administrativa y práctica de un Curso para un grupo de alumnos específicos. | Asignar docentes y gestionar horarios específicos. | *"Establece que una sección pertenezca obligatoriamente a un curso padre, pero que pueda tener docentes independientes."* |
-| **Docente** | Entidad de usuario con rol de profesor o instructor con permisos de edición y evaluación. | Asignar a secciones específicas de teoría o laboratorio. | *"Asigna docentes a secciones de laboratorios de manera dinámica mediante una tabla de relaciones intermedias."* |
-| **Banco de Preguntas** | Módulo de base de datos indexado que recopila preguntas evaluativas ordenadas por metadatos (tipo de pregunta, contenidos, puntaje, taxonomía). | Filtrar y seleccionar reactivos para construir exámenes. | *"Diseña un motor de búsqueda dentro del Banco de Preguntas que filtre por nivel taxonómico y tiempo estimado de resolución."* |
-| **Editor de Preguntas** | La interfaz de usuario especializada encargada de la creación de las preguntas individuales con sus respectivas pautas de corrección. | Diseñar flujos interactivos para formular preguntas de selección múltiple, desarrollo, verdadero/falso, etc. | *"Crea un editor de preguntas que permita al usuario añadir retroalimentación específica para cada alternativa incorrecta."* |
-| **Diseño de Matrices** | Estructuras curriculares o plantillas técnicas que definen cuántas preguntas de cada tema y nivel de dificultad debe tener una prueba. | Automatizar la generación de exámenes balanceados y válidos. | *"Genera una matriz de evaluación que extraiga del banco 5 preguntas de nivel bajo, 10 de nivel medio y 5 de nivel alto."* |
-| **Evaluaciones** | La estructura de un examen o prueba final, dividida en diseño institucional (portada, logos) e instruccional (diagramación y tipos de preguntas). | Generar el documento final para los estudiantes. | *"Crea un modelo para Evaluaciones que separe el diseño visual de la portada (logos e instrucciones) de la lista de preguntas."* |
-| **Impresión** | Módulo encargado de convertir las evaluaciones en formato PDF imprimible, controlando la aleatorización y generación de formas alternativas (Fila A, Fila B). | Controlar la generación física de los exámenes. | *"Configura el módulo de impresión para que genere tres versiones del examen con el orden de las preguntas aleatorizado."* |
 
 ---
 
