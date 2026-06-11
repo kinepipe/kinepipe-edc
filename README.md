@@ -9,6 +9,9 @@ The current release is focused on reusable, non-operational methodological appen
 ```text
 kinepipe-edc/
 |-- README.md
+|-- glossary/
+|   |-- glossary_non_technical_en.md
+|   `-- glossary_non_technical_es.md
 |-- skills_published/
 |   |-- README.md
 |   |-- mdmake_publication_appendix.md
@@ -29,6 +32,14 @@ The `skills_published/` directory documents a publication-ready set of Agent Ski
 - clinical software development and usability;
 - field resilience and failure control;
 - multilingual path and encoding compliance.
+
+Additionally, this repository includes a bilingual glossary of software design terms for non-technical users to improve their interaction with agentic AI systems during the software design process:
+- **English**: [glossary_non_technical_en.md](glossary/glossary_non_technical_en.md)
+- **Spanish**: [glossary_non_technical_es.md](glossary/glossary_non_technical_es.md)
+
+For further context and reference standards regarding agentic AI, capabilities, and open-source automated harnesses, see the following resources:
+1. The Agent Skills Directory. *Skills*. Accessed June 10, 2026. [https://www.skills.sh](https://www.skills.sh)
+2. Affaan M. *ECC Tools - Open Agent Harness System for GitHub App Automation and Security*. ECC Tools. Accessed June 8, 2026. [https://ecc.tools](https://ecc.tools)
 
 ## Use
 
