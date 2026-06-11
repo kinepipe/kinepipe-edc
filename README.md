@@ -9,6 +9,13 @@ The current release is focused on reusable, non-operational methodological appen
 ```text
 kinepipe-edc/
 |-- README.md
+|-- demo/
+|   |-- README.md
+|   |-- README_es.md
+|   `-- (Flutter source files...)
+|-- docs/
+|   |-- development_experience_en.md
+|   `-- development_experience_es.md
 |-- glossary/
 |   |-- glossary_non_technical_en.md
 |   `-- glossary_non_technical_es.md
@@ -24,18 +31,18 @@ kinepipe-edc/
 
 ## Scope
 
-The `skills_published/` directory documents a publication-ready set of Agent Skills-style rules covering:
+This repository serves as a comprehensive methodological appendix and clinical demo showcase:
 
-- Markdown-based publication documentation;
-- clinical data capture and synchronization;
-- document conversion for AI-assisted review;
-- clinical software development and usability;
-- field resilience and failure control;
-- multilingual path and encoding compliance.
-
-Additionally, this repository includes a bilingual glossary of software design terms for non-technical users to improve their interaction with agentic AI systems during the software design process:
-- **English**: [glossary_non_technical_en.md](glossary/glossary_non_technical_en.md)
-- **Spanish**: [glossary_non_technical_es.md](glossary/glossary_non_technical_es.md)
+1. **Agent Skills Appendices**: The `skills_published/` directory contains rules and guidelines covering Markdown-based documentation, clinical data capture, document conversion, clinical software development, field resilience, and multilingual path compliance.
+2. **Bilingual Non-Technical Glossary**: Explains key development and interaction terms in Spanish and English to aid non-technical researchers collaborating with AI agents:
+   - **English**: [glossary_non_technical_en.md](glossary/glossary_non_technical_en.md)
+   - **Spanish**: [glossary_non_technical_es.md](glossary/glossary_non_technical_es.md)
+3. **Demo EDC - Interactive Flutter App**: The `demo/` folder contains a fully functional, editable cross-platform application illustrating role-based access, local SQLite caching, PDF clinical report exporting, and Bluetooth BLE Polar sensor data capture:
+   - **English Guide**: [demo/README.md](demo/README.md)
+   - **Spanish Guide**: [demo/README_es.md](demo/README_es.md)
+4. **Agentic AI Construction Chronicle**: The `docs/` folder contains bilingual technical reports documenting the actual prompting process, success heuristics (atomic prompting, modular styling), and lessons learned (context degradation, early field testing deficits):
+   - **English Document**: [docs/development_experience_en.md](docs/development_experience_en.md)
+   - **Spanish Document**: [docs/development_experience_es.md](docs/development_experience_es.md)
 
 For further context and reference standards regarding agentic AI, capabilities, and open-source automated harnesses, see the following resources:
 1. The Agent Skills Directory. *Skills*. Accessed June 10, 2026. [https://www.skills.sh](https://www.skills.sh)

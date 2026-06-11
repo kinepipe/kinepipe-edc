@@ -1,0 +1,25 @@
+{
+  "dashboard": {
+    "title": "RESEARCH MODULE",
+    "action_new_eval": "Nueva Evaluación",
+    "action_resume": "Retomar Evaluación",
+    "action_users": "Usuarios",
+    "action_settings": "Configuración General"
+  },
+  "evaluation": {
+    "soft_locked": "Módulo Protegido (Solo Lectura)",
+    "btn_edit": "Habilitar Edición",
+    "mark_complete": "Marcar como Completado"
+  },
+  "settings": {
+    "title": "Configuraciones",
+    "language": "Idioma",
+    "theme": "Tema Visual",
+    "view_options": "Opciones de Vista",
+    "progress_indicator": "Estilo de Indicador de Progreso",
+    "indicator_circular": "Circular (Lateral)",
+    "indicator_linear": "Lineal (Cabecera)",
+    "bluetooth": "Conectividad Bluetooth",
+    "quick_settings": "Opciones Rápidas"
+  }
+}

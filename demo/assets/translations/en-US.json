@@ -1,0 +1,26 @@
+{
+  "dashboard": {
+    "title": "RESEARCH MODULE",
+    "action_new_eval": "New Evaluation",
+    "action_resume": "Resume Evaluation",
+    "action_users": "Users",
+    "action_settings": "Module Settings"
+  },
+  "evaluation": {
+    "mark_complete": "Mark as Completed",
+    "soft_locked": "Protected Module (Read Only)",
+    "btn_edit": "Enable Editing",
+    "progress": "Progress"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": "Visual Theme",
+    "view_options": "View Options",
+    "progress_indicator": "Progress Indicator Style",
+    "indicator_circular": "Circular (Sidebar)",
+    "indicator_linear": "Linear (Header)",
+    "bluetooth": "Bluetooth Connectivity",
+    "quick_settings": "Quick Settings"
+  }
+}
