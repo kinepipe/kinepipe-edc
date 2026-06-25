@@ -45,8 +45,9 @@ This repository serves as a comprehensive methodological appendix and clinical d
    - **Spanish Document**: [docs/development_experience_es.md](docs/development_experience_es.md)
 
 For further context and reference standards regarding agentic AI, capabilities, and open-source automated harnesses, see the following resources:
-1. The Agent Skills Directory. *Skills*. Accessed June 10, 2026. [https://www.skills.sh](https://www.skills.sh)
-2. Affaan M. *ECC Tools - Open Agent Harness System for GitHub App Automation and Security*. ECC Tools. Accessed June 8, 2026. [https://ecc.tools](https://ecc.tools)
+
+1. The Agent Skills Directory. _Skills_. Accessed June 10, 2026. [https://www.skills.sh](https://www.skills.sh)
+2. Affaan M. _ECC Tools - Open Agent Harness System for GitHub App Automation and Security_. ECC Tools. Accessed June 8, 2026. [https://ecc.tools](https://ecc.tools)
 
 ## Use
 
